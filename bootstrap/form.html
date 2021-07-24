@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="../css/style.css">
+    <body>
+  <!--Nav Bars-->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <div class="container">
+            <a href="#" class="navbar-brand">
+                <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="Bootstrap Tamil" width="30" height="24" class="d-inline-block align-text-top ">
+                BootStrap Tamil</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"  data-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse  navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item "><a href="index.html" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="cards.html" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown" data-toggle="dropdown" data-target="#drop" ><a href="#" class="nav-link dropdown-toggle">Help</a>
+                    <div class=" dropdown-menu" id="drop">
+                        <a class="dropdown-item" href="#">Github</a>
+                        <a class="dropdown-item" href="#">Facebook</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Need A Help</a>
+                    </div>
+                    </li>
+                    <li class="nav-item"><a href="listgroup.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="margin-top: 70px;">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item">Contact</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 my-3 "><iframe class="w-100" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Dindigul&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" ></iframe>
+            </div>
+            <hr class="col-lg d-lg-none">
+            <div class="col-lg-4 my-3">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center h6">Contact Page</div>                
+                    <div class="card-body">
+                        <form action="" method="POST">
+                            
+                           <div class="form-group mb-3">
+                            <label for="name">Name <span class="text-danger">*</span></label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" name="name" required>
+                           </div>
+                            
+                            <div class="form-group mb-3 ">
+                                <label for="gender" class="me-3">Gender</label>
+                                <div class="form-check form-check-inline">
+                                <input type="radio" name="gender"class="form-check-input" value="Male" id="gender_male"><label for="gender_male" class="form-check-label">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline" >
+                                <input type="radio" name="gender"class="form-check-input" value="Female" id="gender_female"><label for="gender_female" class="form-check-label">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input type="radio" name="gender"class="form-check-input" value="Others" id="gender_others"><label for="gender_others" class="form-check-label">Others</label>
+                                </div>
+                            </div>
+                           
+                           <div class="form-group mb-3">
+                            <label for="phone">Phone No<span class="text-muted">(Optional)</span></label>
+                            <input type="number" id="phone" class="form-control" placeholder="+91 1234567890" name="phone">
+                           </div>
+
+                            <div class="form-group mb-3">
+                                <label for="email">Email  <span class="text-danger">*</span></label>
+                            <input type="email" id="email" class="form-control" placeholder="sample@gmail.com" name="email" required>
+                            <small id="email_help">we'll never share your email with anyone else</small>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="location">Preferred Location</label>
+                                <select name="location" id="location" class="form-select">
+                                    <option value="">-- Select Location --</option>
+                                    <option value="chennai">Chennai</option>
+                                    <option value="coimbatore">Coimbatore</option>
+                                    <option value="bangalore">Bangalore</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" id="message"  rows="3" placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <div class="form-group mb-3 ">
+                                <div class="form-check">
+                                    <input type="checkbox" name="agreement" id="agreement" value="agreed" class="form-check-input" required>
+                                    <label for="agreement" class="form-check-label">I agree to terms and condition</label>
+                                </div>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button class="btn btn-primary mt-4 " type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+  
+       <script src="https://kit.fontawesome.com/9f3f0172d1.js" crossorigin="anonymous"></script>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script></body>
+</html>
